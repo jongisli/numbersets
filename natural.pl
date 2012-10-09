@@ -55,7 +55,6 @@ test(checkset_derive, all(X == [z, s(z)])) :- checkset([X, s(s(z)), s(s(s(z)))])
 % Testing 3.
 test(ismember_succeed) :- ismember(s(z), [z, s(z)], yes).
 test(ismember_fail, fail) :- ismember(s(s(z)), [z, s(z)], yes).
-%test(ismember_derive) :- ismember(N, [s(z), s(s(s(z)))], A).
 
 % Testing 4.
 test(union_succeed) :- union([z, s(s(z))], [s(z), s(s(z))], [z, s(z), s(s(z))]).
